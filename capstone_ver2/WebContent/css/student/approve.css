@@ -1,0 +1,9 @@
+.approve_box{
+    margin: 3px 0;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    /*background-color: darkred;*/
+}
+

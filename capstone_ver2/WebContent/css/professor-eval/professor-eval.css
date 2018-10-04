@@ -1,0 +1,280 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 1080px;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    background: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app{
+    width: 100%;
+    height: 100%;
+}
+.flex-center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-end-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+.center_box{
+    padding: 10px;
+    width: 900px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.title_sub{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.lists{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    list-style: circle;
+    overflow-x: hidden;
+}
+.lists li{
+    margin-left: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.txt{
+    width: 40px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side_box{
+    width: 300px;
+    height: 100%;
+    /*background-color: #f0f0f0;*/
+}
+.info_box{
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 100%;
+    height: 160px;
+    /*background-color: #278eff;*/
+}
+.my_info_box{
+    width: 280px;
+    height: 90px;
+    /*background-color: darkgoldenrod;*/
+}
+
+.button_box{
+    width: 280px;
+    height: 50px;
+    /*background: greenyellow;*/
+}
+
+.profile_photo{
+    border-radius: 70px;
+    width: 50px;
+    height: 50px;
+    /*background-color: azure;*/
+}
+
+.profile_desc{
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    /*background-color: #dadada;*/
+}
+.desc{
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+.prof_btn{
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+    width: 90px;
+    height: 25px;
+}
+.notice_box{
+    margin-top: 10px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 100%;
+    height: 427px;
+}
+
+.main_box{
+    margin-left: 5px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 580px;
+    height: 100%;
+}
+.options_box{
+    margin-top: 10px;
+    width: 580px;
+}
+
+h4{text-align: center;}
+/****** 寃뚯떆�뙋 *******/
+.board{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.board-info{
+    top: 0;
+    position: sticky;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+.board-info li{
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.li-head-team-name{
+    width: 380px;
+    height: 50px;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+.li-head-team-option{
+    width: 120px;
+    height: 50px;
+    box-sizing: border-box;
+}
+.li-team-name{
+    width: 380px;
+    height: 50px;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+.li-team-option {
+    width: 120px;
+    height: 50px;
+
+}
+.board-list-box{
+    margin: 10px auto;
+    width: 520px;
+    height: 420px;
+    overflow-y: scroll;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+}
+.board-list{
+    width: 505px;
+    height: 50px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.option-button{
+    background-color: white;
+    color: black;
+    border: 1px solid #d7d7d7;
+    font-size: 6px;
+    width: 40px;
+    height: 20px;
+}
+.option-button:hover{
+    box-shadow: 0 3px 8px rgba(104, 104, 104, 0.25), 0 5px 5px rgba(153, 153, 153, 0.22);
+}
+button{
+    width: 210px;
+    height: 40px;
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+/*****************/
+.goToDisplay_box{
+    width: 120px;
+    height: 25px;
+}
+.goToDisplay{
+    display: block;
+    color: #2a2a2a;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+a.button {
+  	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  	}
+  	
+input.submitLink_pro {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+	width: 300px;
+	height: 30px;
+    cursor: pointer;
+}
+
+.board_bottom a{color: #2a2a2a;text-decoration: none;}
+.board_bottom a:visited{color: #2a2a2a;}
+.container {display: inline-block;position: relative;padding-left: 16px;margin-bottom: 12px;cursor: pointer;font-size: 0.7rem;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.container input {position: absolute;opacity: 0;cursor: pointer;}
+.checkmark {position: absolute;top: 0;left: 0;height: 15px;width: 15px;background-color: #eee;}
+.container:hover input ~ .checkmark {background-color: #ccc;}
+.container input:checked ~ .checkmark {background-color: #278eff;}
+.checkmark:after {content: "";position: absolute;display: none;}
+.container input:checked ~ .checkmark:after {display: block;}
+.container .checkmark:after {left: 5px;top: 3px;width: 2px;height: 4px;border: solid white;border-width: 0 2px 2px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}

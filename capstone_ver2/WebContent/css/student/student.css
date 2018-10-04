@@ -1,0 +1,116 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 1080px;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    background: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app{
+    width: 100%;
+    height: 100%;
+}
+.flex-center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-end-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+.center_box{
+    padding: 10px;
+    width: 900px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.title_sub{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.lists{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    list-style: circle;
+    overflow-x: hidden;
+}
+.lists li{
+    margin-left: 40px;
+    height: 20px;
+}
+.txt{
+    width: 100%;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000000;
+}
+.txt:hover {
+	text-decoration: underline;
+}
+
+.side_box{
+    width: 300px;
+    height: 100%;
+    /*background-color: #f0f0f0;*/
+}
+/* ------------버튼을 a태그로 만들기-------------- */
+a.button {
+  	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  	}
+
+input.submitLink {
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+
+    cursor: pointer;
+}
+
+.option-button {
+    margin-left: 30px;
+    font-weight: 200;
+    width: 100px;
+    height: 30px;
+}

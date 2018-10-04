@@ -1,0 +1,410 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 1080px;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    background: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    width: 170px;
+    height: 40px;
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+button:hover{
+    box-shadow: 0 3px 8px rgba(104, 104, 104, 0.25), 0 5px 5px rgba(153, 153, 153, 0.22);
+}
+
+.eval_btn {
+    width: 150px;
+    height: 40px;
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.flex-center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-end-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.center_box{
+    padding: 10px;
+    width: 900px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.title_sub{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.lists{
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    list-style: circle;
+}
+
+.lists li{
+    margin-left: 40px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.txt{
+    width: 40px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side_box{
+    width: 300px;
+    height: 100%;
+}
+.noticeBtn{
+    width: 100%;
+    height: 60px;
+}
+
+/******notice******/
+.notice_box{
+    margin-top: 10px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 100%;
+    height: 427px;
+}
+/******************/
+
+/*****profile******/
+.info_box{
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 100%;
+    height: 160px;
+}
+.my_info_box{
+    width: 280px;
+    height: 90px;
+}
+
+.button_box{
+    width: 280px;
+    height: 50px;
+}
+
+.profile_photo{
+    border-radius: 70px;
+    width: 50px;
+    height: 50px;
+}
+
+.profile_desc{
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.desc{
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+.prof_btn{
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+    width: 90px;
+    height: 25px;
+}
+/******************/
+
+.main_box{
+    margin-left: 5px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 580px;
+    height: 100%;
+}
+.team{
+    width: 120%;
+    height: 350px;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.board_list{
+    margin-bottom: 5px;
+    width: 140px;
+    height: 30px;
+    border-bottom: 1px solid #d7d7d7;
+
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+.num{
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #3c3c3c;
+}
+.board_list a{color: black;text-decoration: none; display: block;}
+.board_list a:active{color: black;}
+.board_list:hover{background-color: #f0f0f0;;}
+.board_list a:visited{color: black;}
+.team_list_box{
+    margin: 0 auto;
+    width: 500px;
+    height: 570px;
+}
+
+.team_left_box{
+    width: 140px;
+    height: 500px;
+    margin-right: 60px;
+}
+.team_right_box{
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.right-top-box{
+    width: 100%;
+    height: 330px;
+}
+.right-bottom-box {
+    width: 100%;
+    height: 160px;
+}
+
+
+.team_info_box{
+    width: 100%;
+    height: 350px;
+}
+._team-title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+._team-desc{
+    width: 100%;
+    height: 230px;
+    text-align: justify;
+    font-weight: 200;
+}
+._download{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+._download a{
+    text-decoration: none;
+    color: black;
+}
+._download:visited{
+    color: black;
+}
+.btn_box{
+    width: 100%;
+    height: 80px;
+}
+.eval_btn{
+    width: 210px;
+    height: 40px;
+    border-radius: 15px;
+
+    background-color: #278eff;
+    border: none;
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.board_bottom{
+    width: 100%;
+    height: 25px;
+}
+
+.goToDisplay_box{
+    width: 120px;
+    height: 25px;
+}
+.goToDisplay{
+    display: block;
+    color: #2a2a2a;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+.board_bottom a{color: #2a2a2a;text-decoration: none;}
+.board_bottom a:visited{color: #2a2a2a;}
+
+/* 평가교수 */
+.count-box{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.count{
+    font-size: 15px;
+    font-weight: normal;
+    color: black;
+}
+.num_count{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #278eff;
+}
+
+.eval-box {
+    width: 100%;
+    height: 60px;
+    padding-top: 30px;
+}
+
+/* check box */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    height: 30px;
+    line-height: 30px;
+    /*margin-bottom: 12px;*/
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container:hover {
+    background-color: rgba(218, 218, 218, 0.4);
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 2px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* --------- */

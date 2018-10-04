@@ -1,0 +1,120 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 1080px;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    background: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app{
+    width: 100%;
+    height: 100%;
+}
+.flex-center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-end-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+.center_box{
+    padding: 10px;
+    width: 900px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+h2{
+    text-align: center;
+}
+
+.tit-area{
+    width: 100%;
+    height: 70px;
+    /*background-color: black;*/
+}
+
+.txt-area{
+    width: 100%;
+    height: 340px;
+}
+
+.file-area{
+    width: 100%;
+    height: 30px;
+}
+
+.button-area {
+    width: 100%;
+    height: 100px;
+}
+
+/* 제목 입력 input form */
+.notice-input-tit {
+    width: 70%;
+    height: 30px;
+    outline: 0;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    font-size: 15px;
+    padding: 2px 6px;
+}
+.notice-input-tit[type=text]:focus {
+    border: 1px solid #b5b5b5;
+}
+
+.notice-input-txt{
+    display: block;
+    width: 70%;
+    height: 300px;
+    border: 1px solid #d7d7d7;
+    background-color: #f8f8f8;
+    padding: 2px 6px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.regist-button {
+    width: 210px;
+    height: 40px;
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+button:hover{
+    box-shadow: 0 3px 8px rgba(104, 104, 104, 0.25), 0 5px 5px rgba(153, 153, 153, 0.22);
+}
