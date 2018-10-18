@@ -1,0 +1,434 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 1080px;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    background: url("../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    width: 210px;
+    height: 40px;
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+button:hover{
+    box-shadow: 0 3px 8px rgba(104, 104, 104, 0.25), 0 5px 5px rgba(153, 153, 153, 0.22);
+}
+.flex-center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-space-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-end-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.center_box{
+    padding: 10px;
+    width: 900px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.title_sub{
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.lists{
+    padding: 0;
+    overflow: scroll;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    list-style: circle;
+}
+
+.lists li{
+    margin-left: 40px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #dadada;
+}
+.lists li:hover .submitLink_pro{
+    background-color: #f1f1f1;
+}
+
+.txt{
+    width: 40px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side_box{
+    width: 300px;
+    height: 100%;
+    /*background-color: #f0f0f0;*/
+}
+.noticeBtn{
+    width: 100%;
+    height: 60px;
+}
+.notice_box{
+    margin-top: 10px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 100%;
+    height: 427px;
+}
+.info_box{
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 100%;
+    height: 160px;
+}
+.my_info_box{
+    width: 280px;
+    height: 90px;
+}
+
+.button_box{
+    width: 280px;
+    height: 50px;
+}
+
+.button_box1{
+    width: 100%;
+    height: 50px;
+}
+
+
+.profile_photo{
+    border-radius: 70px;
+    width: 50px;
+    height: 50px;
+}
+
+.profile_desc{
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.desc{
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+.prof_btn{
+    background-color: #278eff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+    width: 90px;
+    height: 25px;
+}
+.main_box{
+    margin-left: 5px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    width: 580px;
+    height: 100%;
+}
+.list_box{
+    width: 100%;
+    height: 50px;
+}
+.custom-select{
+    width: 210px;
+    height: 40px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #000000;
+}
+.team{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.board_list{
+    margin-bottom: 5px;
+    width: 140px;
+    height: 30px;
+    border-bottom: 1px solid #d7d7d7;
+
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+.num{
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #3c3c3c;
+}
+.board_list a{color: black;text-decoration: none; display: block;}
+.board_list a:active{color: black;}
+.board_list:hover{background-color: #f0f0f0;;}
+.board_list a:visited{color: black;}
+.team_list_box{
+    margin: 0 auto;
+    width: 500px;
+    height: 480px;
+}
+
+.team_left_box{
+    width: 140px;
+    height: 430px;
+    margin-right: 60px;
+}
+.team_right_box{
+    width: 270px;
+    height: 430px;
+}
+
+
+.team_info_box{
+    width: 100%;
+    height: 350px;
+}
+._team-title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+._team-desc{
+    width: 100%;
+    height: 230px;
+    text-align: justify;
+    font-weight: 200;
+}
+._download{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+._download a{
+    text-decoration: none;
+    color: black;
+}
+._download:visited{
+    color: black;
+}
+.btn_box{
+    width: 100%;
+    height: 40px;
+}
+.eval_btn{
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #278eff;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.board_bottom{
+    width: 100%;
+    height: 25px;
+}
+
+.goToDisplay_box{
+    width: 120px;
+    height: 25px;
+}
+.goToDisplay{
+    display: block;
+    color: #2a2a2a;
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+.board_bottom a{color: #2a2a2a;text-decoration: none;}
+.board_bottom a:visited{color: #2a2a2a;}
+
+.board{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.board-info{
+    top: 0;
+    position: sticky;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    width: 515px;
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+.board-info li{
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.file_num{
+    width: 60px;
+}
+.file_title{
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+    width: 340px;
+}
+.file_time{
+    width: 100px;
+}
+.board-select{
+    width: 150px;
+    height: 30px;
+    background-color: #f0f0f0;
+    color: #000000;
+    border: none;
+}
+.search_btn{
+    font-weight: 200;
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+}
+.board-list-box{
+    margin: 10px auto;
+    width: 520px;
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+}
+.board-list{
+    width: 505px;
+    height: 50px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.file_base{
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.file_num_box{width: 60px;}
+.file_title_box{
+    width: 340px;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+.file_time_box{width: 100px;}
+.text-data{font-size: 12px;}
+.board_editBtn{
+    background-color: white;
+    color: black;
+    border: 1px solid #d7d7d7;
+    font-size: 6px;
+    width: 40px;
+    height: 20px;
+}
+.submitLink_pro {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box {
+    width: 100%;
+    height: 60px;
+}
+
+.select-team-con {
+    width: 100%;
+    height: 40px;
+}
+.selected-team {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.option-button {
+    margin-left: 30px;
+    font-weight: 200;
+    width: 100px;
+    height: 30px;
+}
+
+.option-button1 {
+    margin-left: 90px;
+    margin-right: 70px;
+    font-weight: 200;
+    width: 100px;
+    height: 30px;
+}
+.teamList-form{
+	width: 190px;
+}
+.search1-box {
+    width: 100%;
+    height: 90px;
+}
+
+a.button {
+  	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  	}
+
+input.submitLink {
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+
+    cursor: pointer;
+}
