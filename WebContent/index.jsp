@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/index/main.css">
     <title>졸업작품 평가관리 시스템</title>
 </head>
+<%-- 로그인 하지 않았을 떄 --%>
 <u:notLogin>
 <body class="flex-center-row">
 	<div class="center_box flex-center-column">
@@ -20,6 +21,7 @@
         <div class="title_box">
             <span class="_title">졸업작품 평가관리 시스템</span>
         </div>
+        <!-- 로그인 박스 부분 -->
         <div class="sign_box">
             <div class="list_box flex-center-row">
                 <select class="custom-select" name="groupnumber">
