@@ -1,3 +1,4 @@
+<%-- index.jsp --%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%-- <%@ page language="java" pageEncoding="EUC-KR" %> --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -8,18 +9,18 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/index/main.css">
     <title>졸업작품 평가관리 시스템</title>
 </head>
 <u:notLogin>
 <body class="flex-center-row">
-	<div class="center_box flex-center-column">	
+	<div class="center_box flex-center-column">
     <form action="login.do" method="post">
         <div class="title_box">
             <span class="_title">졸업작품 평가관리 시스템</span>
         </div>
-        <div class="sign_box">            
+        <div class="sign_box">
             <div class="list_box flex-center-row">
                 <select class="custom-select" name="groupnumber">
                     <option value="2">학생</option>
@@ -45,9 +46,9 @@
 	    </div>
  </form>
   		<div class="button_box flex-center-column">
-			<button onclick="location.href='join.do';">Join</button>	
-		</div> 	
-	</div>  
+			<button onclick="location.href='join.do';">Join</button>
+		</div>
+	</div>
 </body>
 </u:notLogin>
 <u:professor>
@@ -100,7 +101,7 @@
 	l-0.248,0.283V39.8c0,1.612,0.896,3.062,2.338,3.782l8.467,4.233c0.054,0.027,0.107,0.055,0.16,0.083
 	C42.677,47.979,42.567,48.054,42.459,48.132z"/>
                     </svg>
-                </div>                
+                </div>
                 <div class="profile_desc">
                     <span class="desc">${authProUser.name}교수님 반갑습니다.</span>
                 </div>
@@ -157,8 +158,8 @@
                 <option value=2018>2018</option>
 				<option value=2019>2019</option>
 				<option value=2020>2020</option>
-            </select> 
-        <button type="submit" id="search" class="prof_btn">Search</button>  
+            </select>
+        <button type="submit" id="search" class="prof_btn">Search</button>
     </form>
     <form action="teamlist.do" method="post" name="findFile">
        <input type="hidden" name="team_no" value="${listTno}">
@@ -172,17 +173,17 @@
             <option value=e>구현서</option>
             <option value=f>형상관리서</option>
             <option value=g>메뉴얼</option>
-            <option value=h>최종보고서</option>            
+            <option value=h>최종보고서</option>
             </select>
        <c:if test="${main_tName ne null}"><button class="btn_tname" type="submit">${main_tName}</button></c:if>
        </form>
 
-        <div class="board-list-box">               
+        <div class="board-list-box">
             <ul class="board-info">
             	<li class="file_num">작성자</li>
                 <li class="file_title">제목</li>
-                <li class="file_time">게시날짜</li> 
-            </ul>             
+                <li class="file_time">게시날짜</li>
+            </ul>
             <c:forEach var="teamarticle_pro" items="${articleTeamPage.content}" varStatus="status">
             <div class="board-list flex-center-row">
             	<div class="file_num_box file_base">
@@ -193,7 +194,7 @@
                             	<span class="text-data">
                             	<input class="submitLink" type="submit" name="filtitle" value='${teamarticle_pro.title}'>
                             	<input type="hidden" name="fileNo" value="${teamarticle_pro.fileNo}">
-                            	<input type="hidden" name="team_no" value="${listTno}">      		
+                            	<input type="hidden" name="team_no" value="${listTno}">
     							</span>
     						</form>
                 </div>
@@ -205,14 +206,14 @@
 				<c:if test="${errors.listTeamNotExist}">팀이 존재하지 않습니다.</c:if>
             	</div>
         	</div>
-        	
+
         	<!-- <form action="makeEvalPlan.do" method="get" name="makeEvalPlan"> -->
         	<form action="EvalTeamList.do" method="get" name="EvalTeamList">
         		<div class="btn_box flex-center-row">
                     <button class="eval_btn" type="submit">전체 팀 보기</button>
              	</div>
-            </form> 
-        </div>     
+            </form>
+        </div>
     </div>
 </body>
 </u:professor>
@@ -283,7 +284,7 @@
                     <div class="profile_desc">
                         <span class="desc">>${authStdUser.name}님 반갑습니다.</span>
                     </div>
-                
+
                     <a href="changePwd.do"><button class="prof_btn">패스워드변경</button></a>
                     <a href="logout.do"><button class="prof_btn">로그아웃</button></a>
                 </div>
@@ -312,7 +313,7 @@
                 		<option value="e">구현서</option>
                 		<option value="f">형상관리서</option>
                 		<option value="g">메뉴얼</option>
-                		<option value="h">최종보고서</option> 
+                		<option value="h">최종보고서</option>
                     </select>
                     <button type="submit" id="search">찾기</button>
                  </form>
@@ -321,7 +322,7 @@
                     <ul class="board-info">
                         <li class="file_num">작성자</li>
                         <li class="file_title">제목</li>
-                        <li class="file_time">게시날짜</li>           
+                        <li class="file_time">게시날짜</li>
                     </ul>
                     <c:forEach var="teamarticle1" items="${articleTeamPage.content}" varStatus="status">
                     <c:if test="${allowed == 'no'}" var="result">
@@ -335,20 +336,20 @@
                             <form action="downloadTeamFile.do" method="post" name="downTeamFile">
                                <span class="text-data">
                                	<input class="submitLink" type="submit" name="filtitle" value='${teamarticle1.title}'>
-                               		<input class = "mod_file_class" type="hidden" name="fileNo" value="${teamarticle1.fileNo}">           
+                               		<input class = "mod_file_class" type="hidden" name="fileNo" value="${teamarticle1.fileNo}">
                          	   </span>
                       		</form>
                         </div>
                         <div class="file_time_box  flex-center-column">
                             <span class="text-data_date">${teamarticle1.regDate}</span>
-       
+
 <!--                                 <button class="modify_section" id = "modify">수정</button> -->
-                         		<form action="teamarticledelete.do" method="post" name="deleteTeamFile">                                 
+                         		<form action="teamarticledelete.do" method="post" name="deleteTeamFile">
                                   <div class="edit_box">
                                      <button class="board_editBtn" id="teamWriteDelete" type="submit">삭제</button>
                                      <input type="hidden" name="fileNo" value="${teamarticle1.fileNo}">
-                                     <c:if test="${teamarticle1.writer.writerId}">암호를 입력하세요.</c:if> 
-                                  </div>              
+                                     <c:if test="${teamarticle1.writer.writerId}">암호를 입력하세요.</c:if>
+                                  </div>
                                 </form>
                         </div>
                     </div>
@@ -357,7 +358,7 @@
 						글 작성자가 아닙니다. <br>
 					</c:if>
                 </div>
-            </div>   
+            </div>
                 <div class="btn_box flex-space-row">
                     <a href="#"><button class="writing" id="write">글쓰기</button></a>
                     <form action="showResultList.do" method="post" name="showResultList">
@@ -368,7 +369,7 @@
                 </div>
         	</div>
         <div class="write_box" id="write_board">
-          <form action="teamwrite.do" method="post" enctype="multipart/form-data">       
+          <form action="teamwrite.do" method="post" enctype="multipart/form-data">
             <div class="w_title_box flex-center-row">
                 <div class="list_box flex-center-row">
                     <select class="custom-select" name="filetype" id="teamFileType">
@@ -384,7 +385,7 @@
                     </select>
                 </div>
             </div>
-            
+
             <input type="hidden" name="fileNo" value="${teamarticle.fileNo}">
             <div class="w_title_box flex-center-row">
                 <input type="text" name="title" id="fileTitle" placeholder="제목">
@@ -399,10 +400,10 @@
                 <button type="submit" id="register">등록</button>
             </div>
             <c:if test="${errors.NotAllw}">잘못된 값입니다.</c:if>
-          </form>        
-        </div>    
+          </form>
+        </div>
          <div class="write_box" id="modify_board">
-          <form action="teamarticlemodify.do" method="post" enctype="multipart/form-data">       
+          <form action="teamarticlemodify.do" method="post" enctype="multipart/form-data">
             <input id="select_file" type="hidden" name="select_file" value="">
             <div class="w_title_box flex-center-row">
                 <input type="text" name="title" placeholder="제목">
@@ -417,7 +418,7 @@
                 <button type="submit" id="mod_register" >수정</button>
             </div>
           </form>
-        </div>   	
+        </div>
 	</div>
 <!-- <script src="src/dealert.js"></script> -->
 <script src="src/modify.js"></script>
